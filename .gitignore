@@ -44,3 +44,7 @@ yarn-error.log*
 # next version
 /apps
 /packages
+
+
+
+*package-lock.json

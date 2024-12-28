@@ -10,6 +10,7 @@ import Topbar from '@/components/layout/topbar';
 import { useMountEffect } from '@/components/lib/primereact.all';
 import { classNames } from '@/components/lib/utils/Utils';
 import NewsSection from '@/components/news/newssection';
+import { AdvancedRiskAnalyserTable } from 'advanced-risk-analyser/components/AdvancedRiskAnalyserTable';
 import Head from 'next/head';
 import { useContext } from 'react';
 
@@ -29,32 +30,7 @@ export default function Home() {
 
     return (
         <div className={landingClass}>
-            <Head>
-                <title>PrimeReact - React UI Component Library</title>
-                <meta charSet="UTF-8" />
-                <meta name="description" content="The ultimate collection of design-agnostic, flexible and accessible React UI Components." />
-                <meta name="robots" content="index, follow" />
-                <meta name="viewport" content="initial-scale=1, width=device-width" />
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@primereact" />
-                <meta name="twitter:title" content="PrimeReact | React UI Component Library" />
-                <meta name="twitter:description" content="The ultimate collection of design-agnostic, flexible and accessible React UI Components." />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="PrimeReact | React UI Component Library" />
-                <meta property="og:url" content="https://primereact.org" />
-                <meta property="og:description" content="The ultimate collection of design-agnostic, flexible and accessible React UI Components." />
-                <meta property="og:image" content="https://primefaces.org/static/social/primereact-preview.jpg" />
-                <meta property="og:ttl" content="604800" />
-            </Head>
-            <NewsSection />
-            <Topbar onDarkSwitchClick={toggleDarkMode} />
-            <HeroSection />
-            <FeaturesSection />
-            <UsersSection />
-            <ThemeSection />
-            <BlockSection />
-            <TemplateSection />
-            <FooterSection />
+           <AdvancedRiskAnalyserTable/>
         </div>
     );
 }
