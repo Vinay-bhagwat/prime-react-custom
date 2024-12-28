@@ -585,11 +585,17 @@ const onGlobalFilterChange = (event) => {
 };
 
 
+const refreshTable = () => {
+
+};
+
 const header = (
   <div  className="flex align-items-center justify-content-end gap-4">
+                <Button label="Refresh" icon="pi pi-refresh" onClick={refreshTable} />
+
   <IconField iconPosition="left">
           <InputIcon className="pi pi-search" />
-          <InputText type="search" value={filters['global'] ? filters['global'].value : '' || ''} onChange={(e) => onGlobalFilterChange(e)} placeholder="Global Search" />
+          <InputText type="search" value={filters['global'] ? filters['global'].value : ''} onChange={(e) => onGlobalFilterChange(e)} placeholder="Global Search" />
       </IconField>
 <MultiSelect value={visibleColumns} options={columns} optionLabel="header" onChange={onColumnToggle} className="w-full sm:w-20rem" display="chip" />
 <div className="flex align-items-center justify-content-end gap-2">
